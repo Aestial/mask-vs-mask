@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://duin3astw08ly" path="res://city/collision/road_split.tscn" id="13_2c50w"]
 [ext_resource type="PackedScene" uid="uid://c13a77ie8m72p" path="res://city/collision/road_straight.tscn" id="14_dg662"]
 [ext_resource type="PackedScene" uid="uid://dwede1bupusg0" path="res://city/collision/road_straight_lightposts.tscn" id="15_ambt6"]
+[ext_resource type="PackedScene" uid="uid://010r7ndtngal" path="res://city/collision/ice_floor.tscn" id="16_dfq0w"]
 
 [node name="MeshLibrary" type="Node3D" unique_id=1022228168]
 
@@ -62,3 +63,5 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="road-straight-lightposts" parent="." unique_id=1984993229 instance=ExtResource("15_ambt6")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="ice-floor" parent="." unique_id=604543037 instance=ExtResource("16_dfq0w")]

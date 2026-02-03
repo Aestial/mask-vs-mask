@@ -3,7 +3,7 @@
 [ext_resource type="PhysicsMaterial" uid="uid://cuw7isymmyyku" path="res://addons/srcoder_simplecar/assets/materials/metal_physics_material.phymat" id="1_da8s6"]
 [ext_resource type="Script" uid="uid://figxbiojiseg" path="res://cars/scripts/player_car.gd" id="2_omlsn"]
 [ext_resource type="Texture2D" uid="uid://d00a8fn18o6y3" path="res://addons/srcoder_simplecar/assets/models/Textures/colormap.png" id="3_eygwn"]
-[ext_resource type="PackedScene" uid="uid://c8xmrg4xpquib" path="res://characters/Alien.glb" id="4_ddnse"]
+[ext_resource type="PackedScene" uid="uid://c5h22nveub6bm" path="res://characters/alien.res" id="4_ddnse"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bwqi7"]
 resource_name = "colormap"
@@ -219,8 +219,16 @@ shadow_mesh = SubResource("ArrayMesh_jalnx")
 [node name="Player" type="VehicleBody3D" unique_id=985821532]
 collision_layer = 2
 collision_mask = 3
+mass = 120.0
 physics_material_override = ExtResource("1_da8s6")
 script = ExtResource("2_omlsn")
+max_torque = 600.0
+max_brake_force = 2.5
+max_wheel_rpm = 750.0
+steer_damping = 0.5
+front_wheel_roll_influence = 9.0
+rear_wheel_roll_influence = 9.0
+reaction_time = 0.0
 
 [node name="body" type="MeshInstance3D" parent="." unique_id=70802392]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10069868, -0.025)
@@ -289,4 +297,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15, 0, 0.00257409)
 mesh = SubResource("ArrayMesh_h7tpb")
 
 [node name="Alien" parent="." unique_id=1190355053 instance=ExtResource("4_ddnse")]
-transform = Transform3D(2.23, 0, 0, 0, 2.23, 0, 0, 0, 2.23, 0, 1.0072381, -0.2553311)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1.1566807, -0.29140052)

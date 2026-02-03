@@ -2,12 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://cpv75mfsda1ml" path="res://city/models/pavement.glb" id="1_xpaig"]
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xpaig"]
-data = PackedVector3Array(-0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 0.049999997, -0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 0.049999997, -0.5, -0.5, 0.049999997, -0.5, -0.5, 0.049999997, -0.5, 0.5, 0.049999997, -0.5, 0.5, 0.049999997, 0.5, 0.5, 0.049999997, 0.5, -0.5, 0.049999997, 0.5, -0.5, 0.049999997, -0.5, 0.5, 0.049999997, 0.5, 0.5, 0.049999997, -0.5, 0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0.049999997, 0.5, 0.5, 0.049999997, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0.049999997, 0.5, 0.5, 0.049999997, 0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, -0.5, 0.049999997, -0.5, -0.5, 0.049999997, -0.5, -0.5, 0.049999997, 0.5, -0.5, 0, 0.5, -0.0486, 0.06, 0.2302, -0.022699999, 0.06, 0.3268, -0.1193, 0.06, 0.3527, -0.1193, 0.06, 0.3527, -0.1452, 0.06, 0.2561, -0.0486, 0.06, 0.2302, -0.2113, 0.06, 0.1266, -0.2502, 0.06, 0.2715, -0.3951, 0.06, 0.23269999, -0.3951, 0.06, 0.23269999, -0.35619998, 0.06, 0.087799996, -0.2113, 0.06, 0.1266, -0.2156, 0.06, 0.4098, -0.3022, 0.06, 0.45979998, -0.3522, 0.06, 0.3732, -0.3522, 0.06, 0.3732, -0.2656, 0.06, 0.3232, -0.2156, 0.06, 0.4098, 0.3428, 0.06, -0.4159, 0.3924, 0.06, -0.27429998, 0.25079998, 0.06, -0.22479999, 0.25079998, 0.06, -0.22479999, 0.2012, 0.06, -0.3663, 0.3428, 0.06, -0.4159)
+[sub_resource type="BoxShape3D" id="BoxShape3D_jcupf"]
+size = Vector3(1, 0.060000002, 1)
 
 [node name="pavement" unique_id=503710359 instance=ExtResource("1_xpaig")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="pavement2" parent_id_path=PackedInt32Array(1370833523) index="0" unique_id=636813747]
+[node name="StaticBody3D" type="StaticBody3D" parent="pavement2" parent_id_path=PackedInt32Array(1163553385) index="0" unique_id=1267735257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.030000001, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="pavement2/StaticBody3D" index="0" unique_id=527985611]
-shape = SubResource("ConcavePolygonShape3D_xpaig")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pavement2/StaticBody3D" index="0" unique_id=666801416]
+shape = SubResource("BoxShape3D_jcupf")

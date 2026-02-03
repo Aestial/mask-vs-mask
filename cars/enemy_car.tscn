@@ -192,9 +192,17 @@ shadow_mesh = SubResource("ArrayMesh_jalnx")
 [node name="Enemy" type="VehicleBody3D" unique_id=985821532]
 collision_layer = 2
 collision_mask = 3
+mass = 150.0
 physics_material_override = ExtResource("1_btapv")
 script = ExtResource("2_btapv")
 target_path = NodePath("^\"/root/Player\" ")
+max_torque = 700.0
+max_wheel_rpm = 700.0
+steer_damping = 0.5
+front_wheel_roll_influence = 12.0
+rear_wheel_roll_influence = 12.0
+aggressiveness = 0.95
+skill_level = 0.95
 
 [node name="body" type="MeshInstance3D" parent="." unique_id=70802392]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10069868, -0.025)

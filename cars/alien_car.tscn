@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://8dxwpw82hfs4"]
+
+[ext_resource type="PackedScene" uid="uid://dgreradqwmog7" path="res://cars/ufo-vehicle/source/uncrible ufo vehicle.glb" id="1_ijd3m"]
+
+[node name="blockbench_export" unique_id=1020332607 instance=ExtResource("1_ijd3m")]

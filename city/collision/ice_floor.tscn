@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://010r7ndtngal"]
+
+[ext_resource type="PackedScene" uid="uid://b3vv2c8f6eqx2" path="res://city/models/ice-floor.glb" id="1_1c632"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1c632"]
+size = Vector3(1, 0.051690187, 1)
+
+[node name="ice-floor" unique_id=604543037 instance=ExtResource("1_1c632")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ice" parent_id_path=PackedInt32Array(2005065673) index="0" unique_id=1487169247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025845094, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ice/StaticBody3D" index="0" unique_id=488701898]
+shape = SubResource("BoxShape3D_1c632")
