@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c8xmrg4xpquib"
-path="res://.godot/imported/Alien.glb-4d52d45e6f750eb9b0767c51562ca470.scn"
+path="res://.godot/imported/Alien.glb-8ce2e90327a265322de5a9ded18ce7f7.scn"
 
 [deps]
 
-source_file="res://characters/Alien.glb"
-dest_files=["res://.godot/imported/Alien.glb-4d52d45e6f750eb9b0767c51562ca470.scn"]
+source_file="res://characters/alien/Alien.glb"
+dest_files=["res://.godot/imported/Alien.glb-8ce2e90327a265322de5a9ded18ce7f7.scn"]
 
 [params]
 

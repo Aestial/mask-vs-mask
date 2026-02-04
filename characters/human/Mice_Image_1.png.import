@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c47s46ivv5my4"
-path.s3tc="res://.godot/imported/Alien_Image_0.png-b4d0d1e47ece861321056a1619554ad9.s3tc.ctex"
+uid="uid://nxcmiwdu32dw"
+path.s3tc="res://.godot/imported/Mice_Image_1.png-357c6e43455e199bbe24a597518c65d6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "106a430ab53d6bd8e1081812cfb2be3c"
+"md5": "3ad7406c39b3f5c4153040cc4dba6546"
 }
 
 [deps]
 
-source_file="res://characters/Alien_Image_0.png"
-dest_files=["res://.godot/imported/Alien_Image_0.png-b4d0d1e47ece861321056a1619554ad9.s3tc.ctex"]
+source_file="res://characters/human/Mice_Image_1.png"
+dest_files=["res://.godot/imported/Mice_Image_1.png-357c6e43455e199bbe24a597518c65d6.s3tc.ctex"]
 
 [params]
 

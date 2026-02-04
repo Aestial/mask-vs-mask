@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpocamqxxgnp3"
-path.s3tc="res://.godot/imported/Mice_Image_2.jpg-9a6b235b5fa74f90b5f20107a030de81.s3tc.ctex"
+uid="uid://cdcavyqq8mm27"
+path.s3tc="res://.godot/imported/Mice_Image_0.jpg-3b271471910962076c829b2f5bd4f693.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "03e83371e186fa2fd97970602887e25c"
+"md5": "aef9724ae452c55f16fc259188f98070"
 }
 
 [deps]
 
-source_file="res://characters/Mice_Image_2.jpg"
-dest_files=["res://.godot/imported/Mice_Image_2.jpg-9a6b235b5fa74f90b5f20107a030de81.s3tc.ctex"]
+source_file="res://characters/human/Mice_Image_0.jpg"
+dest_files=["res://.godot/imported/Mice_Image_0.jpg-3b271471910962076c829b2f5bd4f693.s3tc.ctex"]
 
 [params]
 

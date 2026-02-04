@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dv8dl6ae631m3"
-path="res://.godot/imported/Mice.glb-ff0e90f530b0d57c895ac377473e31e3.scn"
+path="res://.godot/imported/Mice.glb-4c5c1bdb6664994d3d899d42b9dd2e5a.scn"
 
 [deps]
 
-source_file="res://characters/Mice.glb"
-dest_files=["res://.godot/imported/Mice.glb-ff0e90f530b0d57c895ac377473e31e3.scn"]
+source_file="res://characters/human/Mice.glb"
+dest_files=["res://.godot/imported/Mice.glb-4c5c1bdb6664994d3d899d42b9dd2e5a.scn"]
 
 [params]
 

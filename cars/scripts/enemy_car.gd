@@ -7,6 +7,12 @@ class_name EnemyCar
 @export var follow_distance : float = 5.0
 @export var ramming_distance : float = 3.0
 @export var use_pathfinding : bool = true
+enum Behavior { CHASER, BLOCKER, PATROLLER }
+@export var behavior: Behavior
+
+@export_category("Enemy AI - Head Behavior")
+@export var use_head_for_recovery : bool = true
+@export var use_head_for_combat: bool = true
 
 var target : Node3D = null
 var nav_agent : NavigationAgent3D
@@ -20,6 +26,8 @@ func _ready() -> void:
 	
 	if use_pathfinding:
 		setup_pathfinding()
+		
+	set_ai_behavior(behavior)
 		
 func setup_pathfinding():
 	nav_agent = NavigationAgent3D.new()
@@ -104,19 +112,28 @@ func calculate_pursuit_input() -> Vector2:
 		input_vector.y = 0.0 # Match speed
 		
 	return input_vector
+
+func check_combat_collisions():
+	pass
+	
+func start_damage_flash() -> void:
+	pass
+	
+func explode() -> void:
+	pass
 	
 func set_target(new_target: Node3D):
 	target = new_target
 	
-func set_ai_behavior(behavior_type: String):
+func set_ai_behavior(behavior_type: Behavior):
 	# Different enemy behaviors (chaser, blocker, patroller, etc.)
 	match behavior_type:
-		"chaser":
+		Behavior.CHASER:
 			aggressiveness = 1.5
 			follow_distance = 3.0
-		"blocker":
+		Behavior.BLOCKER:
 			aggressiveness = 1.2
 			follow_distance = 2.0
-		"patroller":
+		Behavior.PATROLLER:
 			aggressiveness = 0.8
 			follow_distance = 8.0
